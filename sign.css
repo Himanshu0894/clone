@@ -1,0 +1,74 @@
+#con{
+    width:90%;
+    /* border:1px solid black; */
+    margin:auto;
+    height:820px;
+    margin-top: -430px;;
+}
+.cen{
+    text-align: center;
+}
+#boxes{
+    width:100%;
+    /* border:1px solid green; */
+    /* display: inline-block; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+   
+}
+.f1{
+    width:48%;
+    height:630px;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    /* border-radius: 10px; */
+    background-color: #ECEFF1;
+    box-shadow: 10px 15px 5px #ECEFF1;;
+}
+.f2{
+    width:48%;
+    height:600px;
+    /* border: 1px solid blue; */
+    display: inline-block;
+}
+ h1{
+    text-align: center;
+}
+.tetete{
+    font-size: 22px;
+   
+    /* margin-top: 30px; */
+  
+}
+.ipf{
+    width:500px;
+    height: 60px;
+}
+form{
+    padding:50px;;
+}
+.sub{
+    width:100px;
+    padding:10px;
+    height:60px;
+    font-size: 20px;
+    border-radius: 6%;
+    margin-left: 100px;;
+    background-color: #FF9100;
+}
+form > p{
+    font-size: 19px;
+    margin-top: 14px;
+}
+
+/* -------box right side register box */
+.f2{
+    height:630px;
+}
+ .pra{
+    margin-bottom: 10px;;
+    font-family: sans-serif;
+    font-size: 18px;
+
+}

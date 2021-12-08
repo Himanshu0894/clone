@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+	<link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="abh.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/04918a343a.js" crossorigin="anonymous"></script>
+    <style>
+		#second {
+
+			height: 300px;
+			border: 1px solid black;
+			/* width:100% */
+			background-color: whitesmoke;
+
+		}
+		
+
+		#first {
+
+			height: 500px;
+			/* border:1px solid black */
+		}
+
+		#MainPage {
+			display: grid;
+			width: 80%;
+			grid-template-columns: 55% 30%;
+			grid-gap: 5%;
+			/* margin-top: 140px; */
+			margin-left: auto;
+			margin-right: auto;
+			/* border: 1px solid black; */
+			margin-top: -25%;
+			margin-bottom: 5%;
+
+
+		}
+
+		#total {
+			font-weight: bold;
+		}
+
+		#tot {
+			font-weight: bold;
+			color: black;
+		}
+		#gif{
+			margin-left: 30%;
+		}
+		#msg{
+			display: none;
+		}
+
+
+        /* ------------------- */
+        
+#in{
+	margin: 0;
+	height: 30px;
+	background-color:#E0E0E0;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+#debit{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 20px 20px;
+}
+
+#debit input {
+	height: 30px;
+	outline: none;
+}
+
+#bt{
+	height: 40px;
+	padding: 10px 10px;
+	width: 150px;
+}
+
+#card{
+	width: 220px;
+}
+
+#card-top{
+	display: flex;
+	gap: 15px;
+}
+
+#card-bottom{
+	display: flex;
+	gap: 15px;
+}
+#check{
+	height: 20px;
+	margin: 0;
+}
+
+
+.bottom{
+
+	display: flex;
+	flex-direction: column;
+	margin-left: 0;
+}
+
+button{
+	background-color: orange;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	outline: none;
+}
+
+p{
+	font-family: sans-serif;
+}
+
+
+
+#new1{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+#line{
+	width: 100%;
+	height: 1px;
+	background-color: lightgrey;
+}
+
+#green{
+	height: 500px;
+	border-color: lightgrey;
+	background-color: #eee;
+	width: 100%;
+}
+
+#second{
+	padding: 10px 10px;
+}
+
+button{
+	padding: 20px 20px;
+}
+
+#checkboxx{
+	display: flex;
+	gap: 10px;
+	padding: 20px 20px;
+
+}
+
+#checkboxx p{
+	font-family: arial;
+	font-size: 16px;
+}
+
+#second > div > p{
+	color: #90A4AE;
+	border: 1px red;
+	font-size: 20px;
+	padding: 17px;
+	color: black;
+}
+/* #lal{
+	/* color: red; */
+/* } */ 
+
+	</style>
+</head>
+<body>
+
+	<div id="container_main">
+
+
+
+
+        <div id="main-nav">
+            <div>
+                <form class="example" action="action_page.php">
+                    <input type="text" placeholder="Search here..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+
+            </div>
+            <div>
+                <img src="	https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt="" class="logoimg">
+
+            </div>
+
+            <div id="navicon">
+                <div class="icon_top">
+
+                    <a href="sign.html"><span class="iconsize"><i class="fa fa-user"></i></span></a>
+
+
+                   <a href="cart.html"><span class="iconsize"><i class="fas fa-cart-plus"></i></span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="myslideshow"></div> -->
+
+        <div class="topnav">
+
+            <a class="active" href="abh.html">Home</a>
+
+
+            <div class="dropdown">
+                <a href="" >Categories</a>
+                <div class="dropdown-content" id="men">
+                    <div class="d1">
+
+                        <div class="part">
+                            <div>
+                                <h5>FASHION</h5>
+                               
+                                <a href="mem.html"><h4>MEN</h4></a>
+                                <p>Casual Shoes/Chappals</p>
+                                <p>Casual/Party Shoes</p>
+                                <p>Casual Sandals</p>
+                                <p>Sandals</p>
+                                <p>Crocs</p>
+                                <p>Flip Flop</p>
+                                <p>Loafer</p>
+                                <p>Mojdi</p>
+                                <p>Sneakers</p>
+                                <p>Sport Sandals</p>
+                                <p>Sport Shoes</p>
+                                <h4>Womens</h4>
+                                <h4>Kids</h4>
+                                <h4>Socks</h4>
+                                <h4>Clothing</h4>
+
+                            </div>
+                            <div>
+                                <a href="grocery.html"><h5>KITCHEN</h5></a>
+                                <a href="grocery.html"> <h4>Kitchen Ware</h4></a>
+                                <a href="women.html"><h4>Air tight Container</h4></a>
+                                  <a href="women.html"> <h4>Gas Lighter</h4></a>
+                                    <a href="women.html"><h4>Kitchen Tools</h4></a>
+                                      <a href="grocery.html"> <h4>Household Supplies</h4></a>
+                                        <a href="grocery.html"> <h4>Grocery</h4></a>
+                                          <a href="grocery.html"><h4>Spices</h4></a>
+                              
+                              </div>
+                            <div>
+                                <h5>ACCESSORIES</h5>
+                                <h4>Unisex Bracelets</h4>
+                                <h4>Jewelery</h4>
+                                <h4>Bathroom Accessories</h4>
+                              
+                            </div>
+                            <div>
+                                <h5>HEALTH & PERSONAL CARE</h5>
+                                <h4>HEALTH CARE</h4>
+                                <p>Day Joy</p>
+                                <p>Face Mask</p>
+                                <p>GNFC</p>
+                                <p>Oxi9</p>
+                                <h4>PERSONAL CARE</h4>
+                                <p>Bombay Shaving Company</p>
+                                <p>Day Joy</p>
+                                <p>Dr Batras</p>
+                                <p>DYNA</p>
+                                <p>GNFC</p>
+                            </div>
+                            <div>
+                                <a href="headphone.html"><h5>ELECTRONICS</h5></a>
+                                <h4>Headphone</h4>
+                                <p>From 599</p>
+                                <p>From 1132</p>
+                                <p>From 1714</p>
+                                <p>From 2297</p>
+                             
+                            </div>
+                            <div>
+                                <h5>ELECTRONICS APPLIANCES</h5>
+                                <p>Philips</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#contact">Customer/Guest login</a>
+            <a href="#about">Merchant/Bulk Order</a>
+            <a href="#about">Become A seller</a>
+        </div>
+    </div>
+
+    <div>.</div>
+
+
+
+
+<!-- --------------------addressbox	 -->
+    <div id="MainPage">
+
+        <div id="first">
+
+
+            <div id="green">
+
+
+                <p id="in">Credit/Debit Card </p>
+
+                <form action="Order.html" >
+                    <div id="debit">
+                        <input type="text" placeholder="Name on card" required id="name">
+                        <div id="card-top">
+                            <input type="text" placeholder="Card number" id="card" required/>
+                            <input type="text" placeholder="CVV" id="input" required/>
+                        </div>
+                        <div id="card-bottom">
+                            <input type="text" placeholder="Expiry MM" id="input1" required>
+                            <input type="text" placeholder="Expiry YY" id="input2" required>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div id="checkboxx">
+                            <input type="checkbox" value="checked">
+                            <p>Save Card for future use</p>
+                        </div>
+                        <div id="gif"></div>
+                        <div id="msg">Please fill all fields</div>
+                        <button onclick="makepay(event)" id="bt">PAY</button>
+                    </div>
+                </form>
+                
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div id="second">
+            <div id="line"></div>
+
+
+
+            <h3>Price Details:</h3>
+
+            <div id="new1">
+                <p>Total MRP</p>
+                <p id="rupee"></p>
+            </div>
+
+
+            <div id="new1">
+                <p>Sub Total</p>
+                <p id="subtotal"></p>
+            </div>
+
+
+
+            <div id="new1">
+                <p class>Shipping Charges</p>
+                <p id="lal">Free</p>
+            </div>
+
+            <div id="line"></div>
+
+            <div id="new1">
+                <p id="tot">Order Total</p>
+                <p id="total"></p>
+            </div>
+ </div>
+
+</div>
+
+<!-- -----footer -->
+<div id="endfooter">
+	<div id="footer">
+
+		<div class="text">
+			<h1>What Our Customer Says</h1>
+			<h1 class="dark">"</h1>
+		</div>
+		<div id="footerbox">
+			<div>
+
+				<div class="footer_para">
+					<p>Auspicious range of foot wares.</p>
+					<p>Premium branded products.Good </p>service and delivery duration.Super<p> high value of
+						customer.
+					</p>
+				</div>
+				<div class="footer_name">Tushar Pandya</div>
+				<div class="footer_star">
+					<div class="ratingstar">&#9733; &#9733; &#9733; &#9733; &#9733;<span
+							class="ratingline">-customer</span></div>
+				</div>
+
+			</div>
+
+			<div>
+
+				<div class="footer_para">
+					<p>Auspicious range of foot wares.</p>
+					<p>Premium branded products. </p>Good service and delivery duration.<p> Super high value of
+						customer. </p>
+				</div>
+				<div class="footer_name">Tushar Pandya</div>
+				<div class="footer_star">
+					<div class="ratingstar">&#9733; &#9733; &#9733; &#9733; &#9733;<span
+							class="ratingline">-customer</span></div>
+				</div>
+
+			</div>
+
+			<div>
+
+				<div class="footer_para">
+					<p>Auspicious range of foot wares.</p>
+					<p>Premium branded products. </p>Good service and delivery duration.<p> Super high value of
+						customer. </p>
+				</div>
+				<div class="footer_name">Tushar Pandya</div>
+				<div class="footer_star">
+					<div class="ratingstar"><span>&#9733; &#9733; &#9733; &#9733; &#9733;<span
+								class="ratingline">-customer</span></div>
+				</div>
+
+			</div>
+
+		</div>
+		<div><button id="Review" class="footer_button">Add Your Review</button></div>
+
+
+		
+
+
+		<!-- second footer start -->
+		<div id="footer2">
+			<div class="extramargin">.</div>
+			<img class="footer2_img imgcenter " src="https://i.ibb.co/x80Vh6J/google-play.png" title="google play">
+
+			<div class="footer2_contain">
+				<a href=" ">ABOUT US</a>
+				<a href=" ">CONTACT</a>
+				<a href=" ">SHIPPING & RETURNS</a>
+				<a href=" ">MY ACCOUNT</a>
+				<a href=" ">PRIVACY POLICY</a>
+				<a href=" ">BECOME A SELLER</a>
+
+			</div>
+			<p class="footer2_para">@ 2019-2020 UBORIC,ALL RIGHTS RESERVED.POWERED BY WEBSMANIAC INC</p>
+
+			<div id="footer2_last" class="footer2_last">
+				<img href=" " src="https://i.ibb.co/YZ4Fr29/fb.png" class="intalogohover">
+				<img src="https://i.ibb.co/dpSvNKq/insta.png">
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
+
+<script>
+
+	let card_data = JSON.parse(localStorage.getItem("card"));
+	
+
+	var total = 0;
+	var totalitem = 0;
+
+	card_data.forEach(function (product) {
+		var out = product.price;
+		var x = out.replace("₹", "0")
+		total = total + Number(x);
+
+		totalitem = totalitem + Number(1);
+	});
+
+	var btn = document.getElementById('bt');
+	//btn.addEventListener('click',makepay);
+	function makepay(e) {
+		e.preventDefault();
+
+	var tot = document.getElementById("rupee");
+    var subtotal = document.getElementById("subtotal");
+    var total_order = document.getElementById("total");
+    var bt = document.getElementById("bt");
+    subtotal.innerHTML = `&#x20B9;${total}`;
+    total_order.innerHTML = `&#x20B9;${total}`;
+    bt.innerHTML = `PAY &#x20B9;${total}`;
+     tot.innerHTML = `&#x20B9;${total}`;
+
+
+		var name = document.getElementById("name").value;
+		var card = document.getElementById("card").value;
+		var input = document.getElementById("input").value;
+		var input1 = document.getElementById("input1").value;
+		var input2 = document.getElementById("input2").value;
+	
+		if(name.length==0 || card.length==0 || input.length==0 || input1.length==0 ||input2.length==0 ){
+			var x =	document.getElementById("msg");
+			x.style.display="block";
+			x.style.color="red";
+
+		}else{
+			var x =	document.getElementById("msg");
+			x.style.display="none";
+			var img = document.createElement("img");
+
+			img.src = "https://1.bp.blogspot.com/-TUnIV6lCpUI/Ug5AjWt-L5I/AAAAAAAABRY/X5083DNXw28/s1600/LoadingWait.gif";
+			var src = document.getElementById("gif");
+			src.appendChild(img)
+
+			setTimeout(function () {
+				window.location.href="order.html";
+			}, 3000);
+		}
+    
+   
+   
+
+			
+		
+		
+	}
+
+
+
+</script>
